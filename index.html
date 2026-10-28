@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive static preview of the Blossom accessories store university project.">
+  <title>Blossom — Accessories Store Demo</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">Skip to collection</a>
+  <div class="notice"><div class="wrap">PORTFOLIO DEMO <span>·</span> Sample data from the Blossom university project</div></div>
+  <header class="header wrap"><a class="brand" href="#top"><span class="brand-mark">✿</span> blossom<span class="brand-dot">.</span></a><nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#story">The project</a></nav><button class="bag-button" id="bag-button" type="button" aria-haspopup="dialog">Bag <span id="bag-count">0</span></button></header>
+  <main id="top">
+    <section class="hero"><div class="wrap hero-inner"><div class="hero-copy"><p class="eyebrow">ACCESSORIES STORE / UNIVERSITY PROJECT</p><h1>Little finds.<br><em>Big personality.</em></h1><p>Explore a playful storefront preview built from the original Blossom catalogue.</p><a class="primary-button" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a></div><div class="hero-art" aria-hidden="true"><div class="hero-circle"></div><div class="hero-card hero-card--shoe"><img src="assets/FB_IMG_1534804363590.jpg" alt=""></div><div class="hero-card hero-card--orca"><img src="assets/cute-orca-whale-cartoon-cute-baby-killer-whale-5Do8It-clipart.jpg" alt=""></div><span class="hero-tag">CURATED FROM THE ORIGINAL PROJECT</span></div></div></section>
+    <div class="wrap demo-disclaimer"><strong>Demo preview</strong><span>Browse the sample catalogue and try the local bag. Accounts, orders, and payments are disabled.</span></div>
+    <section class="collection wrap" id="collection" aria-labelledby="collection-title"><div class="section-top"><div><p class="eyebrow">01 / THE STORE</p><h2 id="collection-title">Explore the <em>collection.</em></h2></div><p>Three sample products from the project database.</p></div><div class="tools"><div class="filters" id="filters" role="group" aria-label="Product categories"><button type="button" class="active" data-category="all" aria-pressed="true">All items</button><button type="button" data-category="fish" aria-pressed="false">Fish</button><button type="button" data-category="shoe" aria-pressed="false">Shoes</button></div><label class="search-label"><span class="sr-only">Search products</span><input id="search" type="search" placeholder="Search items…"></label></div><p class="result-count" id="result-count" aria-live="polite"></p><div class="product-grid" id="product-grid"></div><p class="empty-state" id="empty-state" hidden>No items match that search.</p></section>
+    <section class="story" id="story"><div class="wrap story-inner"><p class="eyebrow">02 / BEHIND THE PROJECT</p><h2>A storefront with<br><em>the essentials.</em></h2><div><p>The original Blossom project is a PHP and MySQL accessories store. Visitors can browse by category, view product details, see discounts and stock status, add items to a cart, and continue to checkout. It also includes account and administration screens.</p><p>This static portfolio demo presents the visitor-facing catalogue with the project’s sample records. Bag changes stay in this browser only.</p></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>blossom<span class="brand-dot">.</span></span><small>Static portfolio demo · No orders or payments</small><a href="#top">Back to top ↑</a></div></footer>
+  <dialog id="details-dialog" class="details-dialog" aria-labelledby="details-title"><button type="button" class="close" data-close="details-dialog" aria-label="Close details">×</button><div id="details-content"></div></dialog>
+  <dialog id="bag-dialog" class="bag-dialog" aria-labelledby="bag-title"><div class="dialog-heading"><div><p class="eyebrow">YOUR PICKS</p><h2 id="bag-title">Your bag</h2></div><button type="button" class="close" data-close="bag-dialog" aria-label="Close bag">×</button></div><div id="bag-items"></div><div id="bag-footer"></div></dialog>
+</body>
+</html>
